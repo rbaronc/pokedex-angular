@@ -1,0 +1,13 @@
+<p>pokemon-list works!</p>
+<mat-grid-list cols="4">
+    <mat-grid-tile *ngFor="let pokemon of pokemons">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title class="pkmn-name">{{pokemon.name}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img class="pkmn-img"[src]="pokemon.listImageURL"/>
+            </mat-card-content>            
+        </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
